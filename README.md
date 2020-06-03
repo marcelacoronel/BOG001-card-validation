@@ -1,9 +1,3 @@
-Prueba Alejandra :)
-
-
-Prueba usando mi consola de visual studio code :)
-
-
 # Tarjeta de crédito válida
 
 ## Índice

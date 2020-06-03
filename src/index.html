@@ -6,9 +6,68 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+
+    
+      <p>All Drive</p>
+      <p>Alquiler de autos en Colombia</p>
+      
+      <ul>
+        <li>Inicio</li>
+        <li>Servicios</li>
+        <li>Contacto</li>
+      </ul>
+
+    </header>
+
+
+    <main>
+
+      <p>Validación Tarjeta de Crédito</p>
+      
+      <div class ="vista1">
+      <p>Información de validación</p>
+      <form>
+        <label for="user_name">Nombre Completo</label>
+        <input type="text" id="userName" name="user_name"><br>
+
+        <label for="user_id">Identificación</label>
+        <input type="text" id="userId" name="user_id"><br>
+
+        <label for="user_card">Número de tarjeta</label>
+        <input type="text" id="creditCardNumber" pattern="[0-9]{16}" name="user_card" title="El número de tarjeta debe tener al menos 16 dígitos"><br>
+        
+        <button>Cancelar</button>
+        <button type="submit">Enviar</button>
+
+      </form>
+      </div>
+
+      <div class ="vista2">
+        
+        <p>Resultad de validación</p>
+        <p>Su número de tarjeta ********3124 ha sido validado, puede continuar el proceso.</p>
+        
+        <button>Cancelar</button>
+        <button>Continuar</button>
+
+      </div>
+
+      <div class="vista3">
+
+        <p>Resultado de validación</p>
+        <p>Su número de tarjeta ********* no pudo ser validado. Por favor, intente nuevamente.</p>
+        <button>Cancelar</button>
+        <button>Continuar</button>
+
+      </div>
+        
+    </main>
+    <footer>
+      <p>Autores: Marcela Coronel & Alejandra Pérez.</p>
+    </footer>
+
     <script src="index.js" type="module"></script>
+
   </body>
 </html>

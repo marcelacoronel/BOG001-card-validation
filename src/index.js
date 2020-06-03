@@ -7,7 +7,6 @@ function getInputCardValue(){
     const creditCardNumberArray = creditCardNumberString.split(); //check que es un array
 
     console.log(creditCardNumber);
-
     console.log(creditCardNumberString);
 
     console.log(creditCardNumberArray[0]);

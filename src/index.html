@@ -3,50 +3,65 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <header>
 
-    
-      <p>All Drive</p>
-      <p>Alquiler de autos en Colombia</p>
+  
+    <header id = "main-header"> 
       
-      <ul>
-        <li>Inicio</li>
-        <li>Servicios</li>
-        <li>Contacto</li>
-      </ul>
+      <span class="site-name"><p>All Drive</p></span>
+      <span class="site-description">Alquiler de autos en Colombia</span>
+      
+      <nav> 
+        <ul>
+          <li><a href ="#">Inicio</a></li>
+          <li><a href ="#">Servicio</a></li>
+          <li><a href ="#">Contacto</a></li>
+        </ul>
+      </nav>
+      
 
     </header>
+  
 
 
     <main>
 
-      <p>Validación Tarjeta de Crédito</p>
       
+      <div class="ventana_title">
+        <p>Validación Tarjeta de Crédito</p>
+      </div>
+
+
+
       <div class ="vista1">
+
       <p>Información de validación</p>
-      <form>
+      <form id = "cuadros">
         <label for="user_name">Nombre Completo</label>
-        <input type="text" id="userName" name="user_name"><br>
+        <input type="text" id="userName" name="user_name"><br><br>
 
         <label for="user_id">Identificación</label>
-        <input type="text" id="userId" name="user_id"><br>
+        <input type="text" id="userId" name="user_id"><br><br>
 
         <label for="user_card">Número de tarjeta</label>
-        <input type="text" id="creditCardNumber" pattern="[0-9]{16,19}" name="user_card" title="El número de tarjeta debe tener al menos 16 dígitos"><br>
+        <input type="text" id="creditCardNumber" pattern="[0-9]{16,19}" name="user_card" title="El número de tarjeta debe tener al menos 16 dígitos"><br><br>
         
         <button>Cancelar</button>
         <button type="button" onclick="getInputCardValue();">Enviar</button>
 
       </form>
-      </div>
+      </div> 
 
-      <div class ="vista2">
-        
+      <!-- <div class ="vista2">
+        <br>
         <p>Resultad de validación</p>
-        <p>Su número de tarjeta ********3124 ha sido validado, puede continuar el proceso.</p>
+        <br>
+        <p>Su número de tarjeta ********3124 ha sido validado, puede continuar el proceso.</p><br><br>
         
         <button>Cancelar</button>
         <button>Continuar</button>
@@ -54,17 +69,20 @@
       </div>
 
       <div class="vista3">
-
+<br>
         <p>Resultado de validación</p>
-        <p>Su número de tarjeta ********* no pudo ser validado. Por favor, intente nuevamente.</p>
+        <br>
+        <p>Su número de tarjeta ********* no pudo ser validado. Por favor, intente nuevamente.</p><br><br>
         <button>Cancelar</button>
-        <button>Continuar</button>
+        <button>Continuar</button><br>
 
       </div>
-        
+         -->
     </main>
+
+
     <footer>
-      <p>Autores: Marcela Coronel & Alejandra Pérez Mondragón</p>
+      <p>Autores: Marcela Coronel & Alejandra Pérez Mondragón</p><br>
     </footer>
 
     <script src="index.js" type="module"></script>

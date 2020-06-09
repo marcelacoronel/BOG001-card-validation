@@ -1,0 +1,81 @@
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cabin', sans-serif;
+    background-image: url("fondo-auto.jpg");
+    font-size: 1em;
+	line-height: 1.5em;
+}
+
+#main-header{
+    background-color: #139438;
+    color: white;
+    height: 80px;
+}
+
+#main-header p{
+    font-family: ;
+}
+
+.site-name{
+    display: block;
+    font-weight: 1000;
+    font-size: 1.2em;
+}
+
+.site-description{
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+
+}
+
+
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				
+			}
+			
+				nav ul li a:hover {
+					background: #002907;
+				}
+
+.ventana_title{
+    background-color: #139438;
+    width: 500px;
+    padding: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 1px solid #139438;
+    margin-bottom: 1px;
+}
+
+.vista1, .vista2, .vista3{
+    background-color: white;
+    width: 500px;
+    padding: 5px;
+    border: 1px solid white;
+    margin-left: 50px;
+}
+
+
+
+

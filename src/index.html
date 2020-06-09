@@ -11,18 +11,18 @@
   <body>
 
   
-    <header id = "main-header"> 
+    <header> 
       
       <span class="site-name"><p>All Drive</p></span>
       <span class="site-description">Alquiler de autos en Colombia</span>
       
-      <nav> 
+      <!-- <nav> 
         <ul>
           <li><a href ="#">Inicio</a></li>
           <li><a href ="#">Servicio</a></li>
           <li><a href ="#">Contacto</a></li>
         </ul>
-      </nav>
+      </nav> -->
       
 
     </header>
@@ -33,51 +33,58 @@
 
       
       <div class="ventana_title">
-        <p>Validación Tarjeta de Crédito</p>
+        <p id="formheader">Validación Tarjeta de Crédito</p>
       </div>
 
 
 
-      <div class ="vista1">
+      <!-- <div class ="vista1">
 
-      <p>Información de validación</p>
+      <h2 class="h2">Información de validación</h2>
+
       <form id = "cuadros">
-        <label for="user_name">Nombre Completo</label>
+        <label for="user_name" id="formlabel">Nombre Completo</label><br>
         <input type="text" id="userName" name="user_name"><br><br>
 
-        <label for="user_id">Identificación</label>
+        <label for="user_id" id="formlabel">Identificación</label><br>
         <input type="text" id="userId" name="user_id"><br><br>
 
-        <label for="user_card">Número de tarjeta</label>
-        <input type="text" id="creditCardNumber" pattern="[0-9]{16,19}" name="user_card" title="El número de tarjeta debe tener al menos 16 dígitos"><br><br>
+        <label for="user_card" id="formlabel">Número de tarjeta</label><br>
+        <input type="text" id="creditCardNumber" pattern="[0-9]{16,19}" name="user_card" title="El número de tarjeta debe tener al menos 16 dígitos"><br><br><br>
         
+alejandra-4
+        <button id="boton">Cancelar</button>
+        <button id="boton" type="button" onclick="getInputCardValue();">Enviar</button>
+
         <button>Cancelar</button>
         <button type="submit">Enviar</button>
 
       </form>
-      </div> 
+      </div>  -->
 
       <!-- <div class ="vista2">
         <br>
-        <p>Resultad de validación</p>
+        <h2 class ="h2">Resultado de validación</h2>
         <br>
-        <p>Su número de tarjeta ********3124 ha sido validado, puede continuar el proceso.</p><br><br>
-        
-        <button>Cancelar</button>
-        <button>Continuar</button>
 
-      </div>
+        <div id = "resultado">
+        <p>Su número de tarjeta ********3124 ha sido validado, puede continuar el proceso.</p><br><br><br>
+        <button id="boton3">Continuar</button>
+        </div> -->
 
       <div class="vista3">
-<br>
-        <p>Resultado de validación</p>
+
+        <h2 class="h2">Resultado de validación</h2>
         <br>
+
+        
         <p>Su número de tarjeta ********* no pudo ser validado. Por favor, intente nuevamente.</p><br><br>
-        <button>Cancelar</button>
-        <button>Continuar</button><br>
+        <button id="boton3">Salir</button>
+        </div>
+       
 
       </div>
-         -->
+        
     </main>
 
 

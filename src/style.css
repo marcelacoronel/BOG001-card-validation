@@ -9,34 +9,22 @@ body{
 	line-height: 1.5em;
 }
 
-#main-header{
-    background-color: #139438;
-    color: white;
-    height: 80px;
+
+header{
+    width: 100%;
+    position: fixed;        
+    background: #139438;
+    padding: 10px 0;
+    color: #fff;
+    top: 0;
+    right: 0;
 }
-
-#main-header p{
-    font-family: ;
-}
-
-.site-name{
-    display: block;
-    font-weight: 1000;
-    font-size: 1.2em;
-}
-
-.site-description{
-    display: block;
-    font-weight: 300;
-    font-size: 0.8em;
-
-}
-
 
 nav {
-	float: right;
+    float: right;
+    top: 10px;
 }
-	nav ul {
+	/* nav ul {
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -56,26 +44,167 @@ nav {
 			
 				nav ul li a:hover {
 					background: #002907;
-				}
+                } */
+
+
+
+.site-name{
+    display: block;
+    font-weight: 1000;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.site-description{
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    margin-left: 10px;
+
+}
+
+
+
+                
 
 .ventana_title{
     background-color: #139438;
-    width: 500px;
+    width: 689px;
     padding: 5px;
     margin-top: 50px;
     margin-left: 50px;
     border: 1px solid #139438;
     margin-bottom: 1px;
+    margin-top: 130px;
+    text-align: center;
+    
 }
+
+.h2{
+    color: #139438;
+    text-align: center;
+}
+
+
 
 .vista1, .vista2, .vista3{
-    background-color: white;
-    width: 500px;
-    padding: 5px;
-    border: 1px solid white;
+    background-color:rgba(255,255,255,0.8);
+    width: 600px;
+    padding: 50px;
+    border-left: 50px;
     margin-left: 50px;
+    align-content: left;
+    font-size: 18px;
+    font-weight: bold;
+    display: grid;
+    
+    
 }
 
+
+footer{
+    width: 100%;
+    height: 50px;
+    position: fixed;        
+    background: #139438;
+    padding: 5px 0;
+    color: #fff;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+
+.vista2 p, .vista3 p{
+    padding: 20px;
+    margin: 5px;
+    color: black;
+    background-color: rgba(197,253,125,0.41);
+    font-size: 22px;
+    border: 0.1px solid #000000;
+
+}
+
+
+#userName, #userId, #creditCardNumber {
+    border-radius: 3px;
+    border: 1px solid #000000;
+    padding: 20px;
+    width: 550px;
+    height: 20px;
+    background-color: white;
+  }
+
+/* #formlabel{
+    text-align: left;
+} */
+
+/* #boton{
+    background-color: #4CAF50; 
+    width: 33%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    left: 16.3%; 
+    margin: 4px 2px;
+  } */
+
+#boton{
+    background-color: #4CAF50; 
+    width: 33%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    left: 16.3%; 
+    margin: 4px 2px;
+  }
+
+
+  #boton3{
+    background-color: #4CAF50; 
+    width: 33%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    left: 60%;
+    margin: 4px 2px;
+  }
+
+
+
+  #formheader{
+      font-size: 35px;
+      color: white;
+  }
+
+  #resultado{
+      background-color:black;
+  }
+
+  
 
 
 

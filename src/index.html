@@ -41,10 +41,14 @@
         <input type="text" id="userId" name="user_id"><br><br>
 
         <label for="user_card" id="formlabel">Número de tarjeta</label><br>
-        <input type="text" id="creditCardNumber" pattern="[0-9]{16,19}" name="user_card" title="El número de tarjeta debe tener al menos 16 dígitos"><br><br><br>
+        <input type="text" id="creditCardNumber" pattern="[0-9]" name="user_card" title="Solo se aceptan números entre 0 y 9"><br><br><br>
         
         <button id="boton">Cancelar</button>
         <button id="botonEnviar" type="button">Enviar</button>
+
+        <button>Cancelar</button>
+        <button type="submit">Enviar</button>
+
       </form>
       </div> 
 
@@ -52,20 +56,25 @@
         <br>
         <h2 class ="h2">Resultado de validación</h2>
         <br>
+
         <div id = "resultado">
-          <p>Su número de tarjeta ********3124 ha sido validado, puede continuar el proceso.</p><br><br><br>
-          <button id="boton3">Continuar</button>
+        <p>Su número de tarjeta ********3124 ha sido validado, puede continuar el proceso.</p><br><br><br>
+        <button id="boton3">Continuar</button>
         </div> -->
-      </div>
 
-      <div class="vista3">
-      <br>
-      <h2 class="h2">Resultado de validación</h2>
-      <br>
-      <p>Su número de tarjeta ********* no es válida. Por favor, intente nuevamente.</p><br><br>
-      <button id="boton3">Salir</button>
-      </div>
+      <!-- <div class="vista3">
 
+        <h2 class="h2">Resultado de validación</h2>
+        <br>
+
+        
+        <p>Su número de tarjeta ********* no pudo ser validado. Por favor, intente nuevamente.</p><br><br>
+        <button id="boton3">Salir</button>
+        </div> -->
+       
+
+      </div>
+        
     </main>
 
 

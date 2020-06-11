@@ -29,7 +29,7 @@ header p{
 }
 
 nav {
-    box-sizing: ;
+    /* box-sizing:  */
     float: right;
     font-weight: 600;
     font-size: 20px;
@@ -88,7 +88,8 @@ nav {
     border: 1px solid #139438;
     margin-bottom: 1px;
     margin-top: 130px;
-    align-content: center;
+    text-align: center;
+    
 }
 
 .h2{
@@ -107,7 +108,10 @@ nav {
     font-size: 18px;
     font-weight: bold;
     display: grid;
+    
+    
 }
+
 
 footer{
     width: 100%;
@@ -131,7 +135,6 @@ footer{
 
 }
 
-
 #userName, #userId, #creditCardNumber {
     border-radius: 3px;
     border: 1px solid #000000;
@@ -140,28 +143,6 @@ footer{
     height: 20px;
     background-color: white;
   }
-
-/* #formlabel{
-    text-align: left;
-} */
-
-/* #boton{
-    background-color: #4CAF50; 
-    width: 33%;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 3px;
-    position: relative;
-    left: 16.3%; 
-    margin: 4px 2px;
-  } */
 
 #boton{
     background-color: #4CAF50; 
@@ -211,8 +192,12 @@ footer{
       background-color:black;
   }
 
-  
-
-
-
+#userName, #userId, #creditCardNumber {
+    border-radius: 3px;
+    border: 1px solid #000000;
+    padding: 20px;
+    width: 550px;
+    height: 20px;
+    background-color: white;
+  }
 

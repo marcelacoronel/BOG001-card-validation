@@ -3,6 +3,7 @@ let sumaImpares=0;
 let sumaPares=0;
 let sumaDigitos=0;
 let d=0;
+let mismoNumero=0;
 
 const validator = {
   
@@ -34,7 +35,8 @@ const validator = {
              sumaDigitos=0;
         }
           else{
-          arrNumInvertido[i]=arrNumInvertido[i];
+            mismoNumero=arrNumInvertido[i];
+          arrNumInvertido[i]=mismoNumero;
              } 
         sumaImpares = sumaImpares + arrNumInvertido[i];  
     

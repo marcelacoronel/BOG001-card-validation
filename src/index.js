@@ -1,25 +1,18 @@
-//import validator from './validator.js';
+import {validator} from './validator.js';
 
+document.getElementById('botonEnviar').addEventListener('click',  getInputCardValue);
 
-function getInputCardValue(){
-    
+function getInputCardValue() {
     const creditCardNumber = document.getElementById("creditCardNumber").value;
-    const creditCardNumberString = creditCardNumber.toString(); //check de que es una string 
-    const creditCardNumberArray = creditCardNumberString.split(); //check que es un array
-
-    console.log(creditCardNumber); 
-    console.log(creditCardNumberString);
-
-    console.log(creditCardNumberArray[0]);
-    console.log(creditCardNumberArray[1]);
-    console.log(creditCardNumberArray[2]);
-    console.log(creditCardNumberArray[3]);
-
-    return creditCardNumberArray;
-}
-
-
-
-//console.log(validator);
-console.log(validator);
-
+    document.getElementById('cuadros').style.display('none');
+    document.getElementById('vista2').style.display("block");
+    let enmascarar=validator.maskify('creditCardNumber');
+    // ("Su número de tarjeta: ")Mensaje numero enmascarado
+     let respuestaIsvalid= validator.isValid('creditCardNumber');
+      if (respuestaIsvalid==true){
+        //mesaje de validación exitosa
+          }
+         else{
+        // Mensaje de validación de no valida
+             }    
+   }

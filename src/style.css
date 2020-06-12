@@ -1,7 +1,6 @@
-
-/* .vista2,.vista3 {
+.vista2,.vista3 {
     display: none;
-} */
+}
 
 body{
     margin: 0px;
@@ -128,7 +127,7 @@ footer{
     margin: 5px;
     color: black;
     background-color: rgba(197,253,125,0.41);
-    font-size: 22px;
+    /* font-size: 22px; */
     border: 0.1px solid #000000;
 
 }

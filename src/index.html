@@ -1,83 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>All Drive</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
 
-  </head>
-  
-  <body>
-    <header> 
+        <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <span class="site-name"><p>All Drive</p></span>
+    <span class="site-description">Alquiler de autos en Colombia</span>
 
-      <span class="site-name"><p>All Drive</p></span>
-      <span class="site-description">Alquiler de autos en Colombia</span>
-      
-      <nav> 
+    <nav>
         <ul>
-          <li><a href ="#">Inicio</a></li>
-          <li><a href ="#">Servicio</a></li>
-          <li><a href ="#">Contacto</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicio</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <main>   
+<div class = "topform">
+  <h3>Servicios en Colombia</h3>
+</div>
 
-      <div class="ventana_title">
-        <p id="formheader">Validación Tarjeta de Crédito</p>
-      </div>
+<div class = "vista">
 
-      <div class ="vista1">
-      <p>Información de validación</p>
-      <form id = "cuadros">
-        <label for="user_name" class="formlabel">Nombre Completo</label><br>
-        <input type="text" id="userName" name="user_name"><br><br>
-
-        <label for="user_id" class="formlabel">Identificación</label><br>
-        <input type="text" id="userId" name="user_id"><br><br>
-
-        <label for="user_card" class="formlabel">Número de tarjeta</label><br>
-        <input type="text" id="cardNumber" pattern="[0-9]" name="user_card" title="Solo se aceptan números entre 0 y 9"><br><br><br>
-        
-        <button id="boton">Cancelar</button>
-        <button id="botonEnviar" type="button">Enviar</button>
-      </form>
-      </div> 
-
-      <div class ="vista2">
-        <br>
-        <h2 class ="h2">Resultado de validación</h2>
-        <br>
-        <div id = "resultado">  
-        <p>Su número de tarjeta <span id="respuestaMaskify"></span></p>
-        <p>Respuesta de validación : <span id="rtaIsvalid"></span></p>
-        <p>ha sido validado, puede continuar el proceso.</p><br><br><br>
-        <button class="boton3">Continuar</button>
-        </div> 
-      </div> 
-
-      <div class="vista3">
-        <h2 class="h2">Resultado de validación</h2>
-        <br>
-          <p>No es válida. Por favor, intente nuevamente.</p><br><br><br>
-             <button class="boton3">Salir</button>
-        </div>
-       
+  <h2>Conoce nuestra flota</h4>
+  <h3>Las mejores opciones para que reserves y aproveches</h3>
 
 
-        
-    </main>
+  <div class = "carOption">
+    <img src="car-1.jpg" alt="car">
+    <p>Alquiler por horas: Encuentra aquí la mejor tarifa del mercado.</p>
 
 
-    <footer>
-      <p>Autores: Marcela Coronel Picón & Alejandra Pérez Mondragón</p><br>
-    </footer>
+  </div>
+  
+  <div class = "carOption">
+    <img src="car-2.jpg" alt="car">
+    <p>Alquiler por días: Encuentra el paquete perfecto que se ajusta a tu bolsillo. </p>
 
-    <script src="index.js" type="module"></script>
+  </div>
 
-  </body>
+  
+  
+</div>
+
+  <div class = "vista1">
+    <h2 class="h2">¡Empieza tu recorrido ahora mismo!</h2>
+                <form id="cuadros">
+                    <label for="user_name" class="formlabel">Nombre Completo</label><br />
+                    <input type="text" id="userName" name="user_name" required /><br />
+                    <br />
+
+                    <label for="user_id" class="formlabel">Identificación</label><br />
+                    <input type="text" id="userId" name="user_id" required /><br />
+                    <br />
+
+                    <label for="user_card" class="formlabel">Número de tarjeta</label><br />
+                    <input type="text" id="cardNumber" pattern="[0-9]" name="user_card" title="Solo se aceptan números entre 0 y 9" required /><br />
+                    <br />
+                    <br />
+
+                    <button class = "boton3" type="submit" id = "back">Regresar</button>
+                    <button class = "boton3" type="submit" id = "next">Continuar</button>
+                    
+                </form>
+
+    
+  </div>
+  
+  
+  <div class= "vista2">
+
+    <br />
+                <h2 class="h2">Resultado de validación</h2>
+                <br />
+                <div id="resultado">
+                    <p>Tu número de tarjeta ha sido validado, pronto recibirás un correo electrónico de confirmación.</p>
+                    <!-- Su número de tarjeta <span id="respuestaMaskify"></span>Respuesta de validación : <span id="rtaIsvalid"></span>ha sido validado, puede continuar el proceso.</p> -->
+                    <br />
+                    <br />
+                    <br />
+                    <button class ="boton3">Continuar</button>
+                </div>
+  </div>
+
+  <div class = "vista3">
+    <h2 class="h2">Resultado de validación</h2>
+                <br />
+                <p>Tu número de tarjeta no pudo ser validado. Por favor, intenta nuevamente.</p>
+                <br />
+                <br />
+                <br />
+                <button class ="boton3" id = "startAgain">Intentar de nuevo</button>
+    
+  </div>
+
+  <footer>
+    <p>Autores: Marcela Coronel Picón & Alejandra Pérez Mondragón</p>
+    <br />
+</footer>
+
+
+<script src="index.js"></script>
+</body>
 </html>
+
+

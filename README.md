@@ -10,11 +10,11 @@ El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),también
 
 All Drive es una companía que ofrece el servicio de renta de autovomiles en Colombia. Nuestro aplicación web de alquiler permite que las personas puedan tener una experiencia más fácil y sencilla para adquirir este tipo de servicio de acuerdo a su necesidad.  El sistema de alquiler se limitó a la selección del tiempo de uso por el usuario sea por horas o días, la validación de una tarjeta de crédito para realizar el pago electrónico del servicio seleccionado utilizando el [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn) y la implementación de otra funcionalidad permite ocultar todos los digitos de la tarjeta ingresada menos los últimos cuatro para mayor seguridad. Para esto, utilizamos HTML, CSS y JavaScript como herramientas.
 
-## 4. Objetivo general 
+## 3. Objetivo general 
 
 Construir una aplicación web que le permita al usuario interactuar con un servicio de alquiler de autos validando su tarjeta de crédito como método de pago utilizando HTML, CSS y JavaScript como tecnologías.
 
-## 6. Funcionalidades
+## 4. Funcionalidades
 
 - Solo permite el uso de caracteres numéricos [0 - 9] para el ingreso del número de tarjeta.
 - Se realiza la validación de número de tarjeta usando el algoritmo de Luhn:
@@ -24,9 +24,9 @@ Construir una aplicación web que le permita al usuario interactuar con un servi
 - Se ocultan todos los dígitos de de la tarjeta ingresada menos los últimos cuatro. 
 
 ## 5. Producto final
+![view 2](https://i.imgur.com/JOQDFhH.jpg)
 
-
-## 7. Investigación (UX) - Interfaz de usuario (UI)
+## 6. Investigación (UX) - Interfaz de usuario (UI)
 
 ### Definición del producto 
 
@@ -55,4 +55,3 @@ Construir una aplicación web que le permita al usuario interactuar con un servi
     **Feedback:** Se necesita un background más acorde a los colores del tema. Una menú inicial donde se describan los serivicios pues aún no es claro de qué trata el aplicativo web. Títulos más amigables con el usuario. 
 - ##### Prototipo Final
     Nueva vista inicial con elementos descriptivos de los serivicios prestados. Botones más intuitivos y funcionales para navegar entre regresar o seleccionar un servicio diferente. 
-![view 2](https://i.imgur.com/ZYaZI6N.jpg)

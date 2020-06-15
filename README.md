@@ -9,9 +9,6 @@
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
 
-***
-HOla esta es la prueba de Marcela.
-Segunda prueba Marcela.
 
 ## 1. Preámbulo
 

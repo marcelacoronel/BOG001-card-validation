@@ -62,12 +62,12 @@
                     <br />
 
                     <label for="user_card" class="formlabel">Número de tarjeta</label><br />
-                    <input type="text" id="cardNumber" pattern="[0-9]" name="user_card" title="Solo se aceptan números entre 0 y 9" required /><br />
+                    <input type="text" id="cardNumber"  name="user_card" title="Solo se aceptan números entre 0 y 9" required /><br />
                     <br />
                     <br />
 
-                    <button class = "boton3" type="submit" id = "back">Regresar</button>
-                    <button class = "boton3" type="submit" id = "next">Continuar</button>
+                    <button class = "boton3" type="button" id = "back">Regresar</button>
+                    <button class = "boton3" type="button" id = "next">Continuar</button>
                     
                 </form>
 
@@ -81,8 +81,8 @@
                 <h2 class="h2">Resultado de validación</h2>
                 <br />
                 <div id="resultado">
+                  <p>Tarjeta No. <span id="respuestaMaskify"></span></p>
                     <p>Tu número de tarjeta ha sido validado, pronto recibirás un correo electrónico de confirmación.</p>
-                    <!-- Su número de tarjeta <span id="respuestaMaskify"></span>Respuesta de validación : <span id="rtaIsvalid"></span>ha sido validado, puede continuar el proceso.</p> -->
                     <br />
                     <br />
                     <br />
@@ -93,6 +93,7 @@
   <div class = "vista3">
     <h2 class="h2">Resultado de validación</h2>
                 <br />
+                <p>Tarjeta No. <span id="respuesta2Maskify"></span></p>
                 <p>Tu número de tarjeta no pudo ser validado. Por favor, intenta nuevamente.</p>
                 <br />
                 <br />
@@ -107,7 +108,7 @@
 </footer>
 
 
-<script src="index.js"></script>
+<script src="index.js" type="module"></script>
 </body>
 </html>
 

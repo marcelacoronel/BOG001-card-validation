@@ -1,9 +1,9 @@
-//import validator from './validator.js';
+import validator from './validator.js';
 
 //document.getElementById('botonEnviar').addEventListener('click',  getInputCardValue);
 
 
-const alefy = 2;
+// const alefy = 2;
 
 const viewSelect = document.getElementsByClassName("vista")[0];
 const viewStart = document.getElementsByClassName("vista1")[0];
@@ -34,6 +34,7 @@ function startOver(){
     viewInvalid.style.display = 'none';
     viewSelect.style.display = 'none';
     viewStart.style.display = 'block';
+    
 }
 
 function startClean(){
@@ -48,26 +49,40 @@ function getInputCardValue(){
 
   //Ya que tengo el error con el módulo no pude poner el enmascarar en el HTML
 
-  // let creditCardNumber = document.getElementById('cardNumber').value;
-  // let respuestaIsvalid= validator.isValid(creditCardNumber);
-  // document.getElementById('rtaIsvalid').innerHTML=respuestaIsvalid;
-
-  // let enmascarar=validator.maskify(creditCardNumber);
-  // document.getElementById('respuestaMaskify').innerHTML=enmascarar;
+  let creditCardNumber = document.getElementById('cardNumber').value;
+  let respuestaIsvalid= validator.isValid(creditCardNumber);
+  let enmascarar=validator.maskify(creditCardNumber);
+  if(respuestaIsvalid==true){
+    // document.getElementById('rtaIsvalid').innerHTML=respuestaIsvalid;
+    document.getElementById('respuestaMaskify').innerHTML=enmascarar;
+    viewValid.style.display = 'block';
+    viewStart.style.display = 'none';
+    viewSelect.style.display = 'none';
+  }
+  else{
+    document.getElementById('respuesta2Maskify').innerHTML=enmascarar;
+    viewInvalid.style.display = 'block';
+    viewStart.style.display = 'none';
+    viewSelect.style.display = 'none';
+    // document.getElementById('respuestaMaskify').innerHTML=enmascarar;
+  }
+  
+ 
+ 
 
   //viewStart.style.display = 'none';
   //viewSelect.style.display = 'none';
   // Para mostrar si es válido puse un 1 de prueba ya que no pude traer el isValid
 
-    viewStart.style.display = 'none';
+    // viewStart.style.display = 'none';
 
 
-    if(alefy === 1){
-        viewValid.style.display = 'block';
-    }
-    else{
-        viewInvalid.style.display = 'block';
-    }
+    // if(alefy === 1){
+    //     
+    // }
+    // else{
+    //     
+    // }
     
 }
 
